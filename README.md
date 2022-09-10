@@ -8,6 +8,7 @@
 - `. venv/bin/activate`
 - `pip install -r requirements.txt`
 - `deactivate`
+- (Or easy one liner: `python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt && deactivate`)
 - Create yaml config file (see sample for reference)
 - Do a sample to make sure all works (i.e `./bootstrap.sh ../linux_info_collector_mqtt.yml`)
 
