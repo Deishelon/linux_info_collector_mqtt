@@ -2,6 +2,7 @@
 import random
 import subprocess
 import sys
+import time
 
 import yaml
 from paho.mqtt import client as mqtt_client
@@ -94,6 +95,8 @@ def run_collector(config):
 
         print(file_content)
     # Proc reader END
+
+    time.sleep(1)
     mqtt_connection.disconnect()
 
 

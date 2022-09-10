@@ -18,4 +18,4 @@
 * * * * * /home/pi/linux_info_collector_mqtt/bootstrap.sh /home/pi/linux_info_collector_mqtt.yml
 ```
 - Save crontab and wait 1 min to see the new reports are coming from the device
-- If something wrong with the cron job, you can start by debugging it with ` grep CRON /var/log/syslog`
+- If something wrong with the cron job, you can start by debugging it with `grep CRON /var/log/syslog`
