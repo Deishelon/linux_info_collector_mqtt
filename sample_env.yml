@@ -1,0 +1,30 @@
+mqtt:
+   host: mqtt.home
+   port: 1883
+   topic: 'test2/m/v1/hw/{}'
+
+host:
+   id: deishelon-server
+
+proc-reader:
+   thermal_zone0:
+      path: /sys/class/thermal/thermal_zone0/temp
+      should_separate: True
+      separator_mapping:
+         temp:
+            position: 0
+            type: int
+   loadavg:
+      path: /proc/loadavg
+      should_separate: True
+      separator: " "
+      separator_mapping:
+         avg_1:
+            position: 0
+            type: float
+         avg_5:
+            position: 1
+         avg_15:
+            position: 2
+
+

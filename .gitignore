@@ -1,6 +1,3 @@
-# Igore any user created config files
-/*.yml
-
 # Ignore venv
 *venv*/
 
